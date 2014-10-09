@@ -37,20 +37,20 @@ public class RadioButton {
         frame.add(camero);
         frame.add(output);
 
-        ferrari.addItemListener(buttonSelected(ferrari));
-        lamborghini.addItemListener(buttonSelected(lamborghini));
-        mustang.addItemListener(buttonSelected(mustang));
-        camero.addItemListener(buttonSelected(camero));
+        ferrari.addItemListener(buttonSelected());
+        lamborghini.addItemListener(buttonSelected());
+        mustang.addItemListener(buttonSelected());
+        camero.addItemListener(buttonSelected());
 
     }
 
-    private ItemListener buttonSelected(JRadioButton btn){
-        final JRadioButton x = btn;
+    private ItemListener buttonSelected(){
         return new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                if (x.isSelected()){
-                    output.setText("You Selected : "+ x.getText());
+                JRadioButton a = (JRadioButton)e.getSource();
+                if (a.isSelected()){
+                    output.setText("You Selected : "+ a.getText());
                 }
             }
         };
