@@ -9,7 +9,7 @@ public class MainRoot {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new CheckBoxes();
+                new RadioButton();
             }
         });
     }
