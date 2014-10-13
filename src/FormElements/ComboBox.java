@@ -1,3 +1,5 @@
+package FormElements;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -14,7 +16,7 @@ public class ComboBox {
     JLabel input = new JLabel("Select your fav day of the week");
     JLabel output = new JLabel();
 
-    ComboBox(){
+    public ComboBox(){
 
         JFrame frame = new JFrame("Choices Demo");
         frame.setLayout(new FlowLayout());

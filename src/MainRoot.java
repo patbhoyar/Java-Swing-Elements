@@ -1,3 +1,6 @@
+import FormElements.ComboBox;
+import Layouts.BorderLayoutDemo;
+
 import javax.swing.*;
 
 /**
@@ -9,7 +12,7 @@ public class MainRoot {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new ComboBox();
+                new JTableDemo();
             }
         });
     }

@@ -1,3 +1,5 @@
+package FormElements;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ItemEvent;
@@ -18,7 +20,7 @@ public class RadioButton {
 
     RadioButton(){
 
-        JFrame frame = new JFrame("CheckBoxes Demo");
+        JFrame frame = new JFrame("FormElements.CheckBoxes Demo");
         frame.setLayout(new FlowLayout());
         frame.setSize(500, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

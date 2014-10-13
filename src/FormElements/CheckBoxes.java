@@ -1,3 +1,5 @@
+package FormElements;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -23,7 +25,7 @@ public class CheckBoxes {
 
     private void CreateGUI(){
 
-        JFrame frame = new JFrame("CheckBoxes Demo");
+        JFrame frame = new JFrame("FormElements.CheckBoxes Demo");
         frame.setLayout(new FlowLayout());
 
         frame.add(label);
